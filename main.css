@@ -1,0 +1,43 @@
+* {
+    font-family: Noto Sans, Helvetica, Arial, sans-serif;
+    background: antiquewhite;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+
+section.about_me div.about_me_text_picture {
+    display: flex;
+    justify-content: center;
+}
+
+.main_picture {
+    width: 200px;
+    height: auto;
+}
+
+footer div.kontaktinfo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer div.kontaktinfo p {
+    padding-right: 5px;
+}
+
+ul.erhvervserfaring li {
+    list-style: none;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+ul.erhvervserfaring li:hover {
+    font-size: 20px;
+}
+
