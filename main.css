@@ -1,6 +1,10 @@
 * {
     font-family: Noto Sans, Helvetica, Arial, sans-serif;
-    background: antiquewhite;
+}
+
+body {
+    background-image: url("background_main.jpg");
+    background-size: 2000px;
 }
 
 header {
