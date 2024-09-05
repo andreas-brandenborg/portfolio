@@ -13,6 +13,12 @@ header {
     font-size: 20px;
 }
 
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+}
+
 section.about_me div.about_me_text_picture {
     display: flex;
     justify-content: center;
