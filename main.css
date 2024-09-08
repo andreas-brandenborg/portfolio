@@ -1,19 +1,56 @@
 * {
-    font-family: Noto Sans, Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI";
+    color: white;
+    text-align: center;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+
+hr {
+    height: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, blue, purple);
 }
 
 body {
-    background-image: url("background_main.jpg");
-    background-size: 2000px;
+    background-color: black;
 }
 
-header {
-    display: flex;
-    justify-content: space-evenly;
+header a {
     font-size: 20px;
 }
 
-@media screen and (max-width: 500px) {
+header button {
+    padding: 1em 2em;
+    background-color: #161a20;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    min-width: 200px;
+    float: left;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, blue, purple);
+    z-index: -1;
+}
+
+button:hover {
+    z-index: 0;
+}
+
+@media screen and (max-width: 1000px) {
     header {
         flex-direction: column;
     }
@@ -24,30 +61,73 @@ section.about_me div.about_me_text_picture {
     justify-content: center;
 }
 
-.main_picture {
-    width: 200px;
-    height: auto;
+main {
+    clear: both;
+}
+
+main section div.about_me_text_picture {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+    height: 400px;
+    width: auto;
+    float: right;
+}
+
+@media screen and (max-width: 1000px) {
+    img {
+        clear: both;
+    }
 }
 
 footer div.kontaktinfo {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 footer div.kontaktinfo p {
     padding-right: 5px;
 }
 
+section.resume {
+    clear: both;
+}
+
 ul.erhvervserfaring li {
     list-style: none;
     margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 10px blue;
+    border-radius: 10px;
     padding: 10px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 1px 2px 5px 2px purple;
 }
 
-ul.erhvervserfaring li:hover {
-    font-size: 20px;
+div.about_me_text {
+    clear: both;
 }
 
+section.welcome {
+    font-size: 100px;
+}
+
+section.profil {
+    font-size: 100px;
+}
+
+div.navn p.fornavn {
+    display: flex;
+    justify-content: flex-start;
+}
+
+div.navn p.efternavn {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 200px;
+}
+
+footer {
+    clear: both;
+}
