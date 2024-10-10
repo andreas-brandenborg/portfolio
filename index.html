@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="main.css">
-<script src="main.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>Andreas Brandenborg's Portfolie</title>
@@ -26,10 +25,10 @@
             <button>
                 <a href="om.html">Om</a>
             </button>
-            <button id="theme-switch">
-                <img class="darkmode-icon" src=dark_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg>
-                <img class="lightmode-icon" src=light_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg>
-            </button>
+            <input type="checkbox" name="switch" id="switch" hidden>
+            <label for="switch" class="toggler-container">
+                <div class="toggler"></div>
+            </label>
         </div>
     </nav>
 </header>
@@ -45,4 +44,5 @@
     </section>
 </main>
 </body>
+<script src="main.js"></script>
 </html>

@@ -13,11 +13,37 @@ body {
     background-position: center;
 }
 
-.darkmode {
+.dark {
     background-color: rgba(0, 54, 36, 0.8);
     color: lightgreen;
 }
 
+.toggler-container {
+    width: 100px;
+    height: 35px;
+    border-radius: 60px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.toggler {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    margin-left: 5px;
+    transition: transform 0.5s;
+}
+
+#switch:checked + .toggler-container .toggler {
+    transform: translate(55px);
+}
+
+.mode {
+    font-weight: bold;
+}
 
 header a {
     font-size: 25px;
@@ -45,7 +71,7 @@ header button {
     align-items: center;
     margin-right: 10px;
     min-width: 150px;
-    height: 35px;
+    height: 45px;
     float: none;
 }
 
@@ -55,7 +81,7 @@ button::after {
     height: 100%;
     width: 100%;
     border-radius: 1000px;
-    background-image: linear-gradient(to bottom right, green, black);
+    background-image: linear-gradient(to bottom right, green, lightgreen);
     z-index: -1;
 }
 
@@ -153,17 +179,4 @@ p.summary {
 
 footer {
     clear: both;
-}
-
-
-#theme-switch img:last-child {
-    display: none;
-}
-
-.darkmode #theme-switch img:first-child {
-    display: none;
-}
-
-.darkmode #theme-switch img:last-child {
-    display: block;
 }

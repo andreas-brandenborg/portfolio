@@ -1,21 +1,10 @@
-let darkmode = localStorage.getItem("darkmode")
+const switchBtn = document.querySelector("#switch")
+console.log(switchBtn)
 
-const themeSwitch = document.getElementById("theme-switch")
-
-const enableDarkmode = () => {
-    document.body.classList.add("darkmode")
-    localStorage.setItem("darkmode", "active")
-}
-
-const disableDarkmode = () => {
-    document.body.classList.remove("darkmode")
-    localStorage.setItem("darkmode", null)
-}
-
-themeSwitch.addEventListener("click", () => {
-    if (darkmode !== "active") {
-        enableDarkmode()
+switchBtn.addEventListener("change", () => {
+    if (switchBtn.checked) {
+        document.body.classList.add("dark");
     } else {
-        disableDarkmode()
+        document.body.classList.remove("dark");
     }
 })
