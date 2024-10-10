@@ -2,48 +2,65 @@
     font-family: "Segoe UI";
     color: white;
     text-align: center;
-    max-width: 1200px;
-    margin: 25px auto;
-}
-
-hr {
-    height: 5px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background: linear-gradient(to bottom right, blue, purple);
 }
 
 body {
-    background-color: black;
+    background-image: url("background.main.jpg");
+    background-color: rgba(152, 215, 165, 0.65);
+    background-blend-mode: lighten;
+    background-size: 2500px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.darkmode {
+    background-color: rgba(0, 54, 36, 0.8);
+    color: lightgreen;
+}
+
+
 header a {
-    font-size: 20px;
+    font-size: 25px;
+    color: green;
+    text-decoration: none;
+}
+
+div.navigation_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 40px;
 }
 
 header button {
     padding: 1em 2em;
-    background-color: #161a20;
-    border: none;
-    color: #f0f0f0;
+    background-color: white;
+    border: 2px solid white;
+    color: green;
     border-radius: 1000px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    min-width: 200px;
-    float: left;
+    min-width: 150px;
+    height: 35px;
+    float: none;
 }
 
 button::after {
     content: '';
     position: absolute;
-    height: 107%;
-    width: 102%;
+    height: 100%;
+    width: 100%;
     border-radius: 1000px;
-    background-image: linear-gradient(to bottom right, blue, purple);
+    background-image: linear-gradient(to bottom right, green, black);
     z-index: -1;
+}
+
+header a:hover {
+    color: white;
 }
 
 button:hover {
@@ -70,11 +87,14 @@ main section div.about_me_text_picture {
     justify-content: center;
 }
 
-img {
+img.profile-picture {
     border-radius: 50%;
-    height: 400px;
+    height: 300px;
     width: auto;
-    float: right;
+    align-items: center;
+    border: 5px solid white;
+    margin-top: 100px;
+    margin-bottom: 2px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -109,25 +129,41 @@ div.about_me_text {
     clear: both;
 }
 
-section.welcome {
-    font-size: 100px;
+p.mit-navn-er {
+    font-size: 75px;
+    font-weight: bold;
+    margin: 2px;
 }
 
-section.profil {
-    font-size: 100px;
+p.andreas-brandenborg {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 2px;
 }
 
-div.navn p.fornavn {
-    display: flex;
-    justify-content: flex-start;
+hr.main-page {
+    width: 800px;
+    height: 2px;
 }
 
-div.navn p.efternavn {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 200px;
+p.summary {
+    font-size: 35px;
+    font-weight: bold;
 }
 
 footer {
     clear: both;
+}
+
+
+#theme-switch img:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:last-child {
+    display: block;
 }

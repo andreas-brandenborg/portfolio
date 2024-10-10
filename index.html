@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>Andreas Brandenborg's Portfolie</title>
@@ -22,37 +23,26 @@
             <button>
                 <a href="index.html"> Projekter</a>
             </button>
-        </div>
-        <div class="om">
             <button>
                 <a href="om.html">Om</a>
+            </button>
+            <button id="theme-switch">
+                <img class="darkmode-icon" src=dark_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg>
+                <img class="lightmode-icon" src=light_mode_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg>
             </button>
         </div>
     </nav>
 </header>
 <main>
     <section class="welcome">
-        <hr>
-        <h1>Velkommen til min portfolie</h1>
-        <hr>
-    </section>
-    <section class="profil">
         <div class="img">
-            <img src="main_picture.jpg" alt="profilbillede">
+            <img src="main_picture.jpg" alt="profilbillede" class="profile-picture">
         </div>
-        <div class="navn">
-            <p class="fornavn">Andreas</p>
-            <p class="efternavn">Brandenborg</p>
-        </div>
+        <p class="mit-navn-er">Mit navn er</p>
+        <p class="andreas-brandenborg">Andreas Brandenborg</p>
+        <hr class="main-page">
+        <p class="summary">It-arkitektur, studentermedhjælper, chokoladegris</p>
     </section>
 </main>
-<footer>
-    <hr>
-    <h2 class="footer_text"> Kontaktinfo</h2>
-    <div class="kontaktinfo">
-        <p><a href="tel:+4524463436"> Tlf. nr.: 24 46 34 36 </a></p>
-        <p><a href="mailto:andreas.brandenborg@live.dk"> andreas.brandenborg@live.dk</a></p>
-    </div>
-</footer>
 </body>
 </html>
